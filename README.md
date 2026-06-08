@@ -1,158 +1,121 @@
 <br/>
 <p align="center">
-
-  <a href="https://github.com/Blazity/next-saas-starter" >
-    <img src="https://i.imgur.com/jmc2Q1w.png" alt="Logo"  width="49%">
-  </a>
-   <a href="https://github.com/Blazity/next-saas-starter">
-    <img src="https://i.imgur.com/CxkjHhi.png" alt="Logo" width="49%">
-  </a> 
-
-  <h3 align="center">✨ Free Next.js marketing website template for SaaS startups ✨</h3>
+  <h1 align="center">✊ RebelRoot</h1>
+  <h3 align="center">✨ Software Built for Rebels. By Rebels. ✨</h3>
 
   <p align="center">
-    Everything you need to build a great landing page / marketing website for your startup. Great SEO metrics, Green WebVitals, 🚀 Performance, Clean & Pragmatic Codebase out of the box.
+    An independent, developer-led collective designing high-quality, privacy-focused, and fully auditable applications to solve the root problems of digital sovereignty.
     <br/>
     <br/>
-    <a href="https://next-saas-starter-ashy.vercel.app/">View Demo</a>
-    .
-    <a href="https://github.com/Blazity/next-saas-starter/issues">Report Bug</a>
-    .
-    <a href="https://github.com/Blazity/next-saas-starter/issues">Request Feature</a>
+    <a href="https://github.com/ParasxAgarwal/rebelroot">View Repository</a>
+    ·
+    <a href="https://github.com/ParasxAgarwal/rebelroot/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/ParasxAgarwal/rebelroot/issues">Request Feature</a>
   </p>
 </p>
 
-<div align="center">
+---
 
-![Contributors](https://img.shields.io/github/contributors/Blazity/next-saas-starter?color=dark-green) ![Issues](https://img.shields.io/github/issues/Blazity/next-saas-starter) ![License](https://img.shields.io/github/license/Blazity/next-saas-starter)
+## 🛠️ Flagship Products
 
-</div>
+RebelRoot is the parent collective and ecosystem powering a suite of user-centric applications:
 
-<p align="center"><b>Created with :heart: at Blazity </b></p>
-<p align="center"><a href="https://blazity.com/">Blazity</a> is a group of Next.js/Jamstack/Headless experts. Contact us at <a href="mailto:contact@blazity.com">contact@blazity.com</a> if you’d like to talk about your project or just to have a chat with us</p>
+### 🌐 1. Omni Browser
+A state-of-the-art mobile browser built for speed, safety, and ultimate user control.
+* **GeckoView Engine:** Powered by Mozilla's high-performance GeckoView.
+* **Privacy by Default:** Zero tracking, zero analytics, and built-in ad and tracker blocking.
+* **Customization:** Out-of-the-box support for Firefox extensions.
+* **Offline Translation:** On-device Machine Learning translation models to process language without sending data to servers.
+* **Sandboxed Execution:** Secure sandbox architecture keeping system resources protected.
 
-<a href="https://discord.gg/fyWtyNKmfX" style="width: 100%; display: flex; justify-content: center;">
-  <img src="https://discordapp.com/api/guilds/1111676875782234175/widget.png?style=banner2" alt="Blazity Discord Banner"/>
-</a>
-<br />
+### 📖 2. MOCNovel
+A modern, zero-telemetry, zero-ad publishing platform designed to connect independent authors directly with their audience.
+* **AI Recommendation Engine:** Conversational novel discovery assistant powered by Llama 3.3 70B via Groq Cloud.
+* **Real-time Interaction:** Millisecond-level WebSocket live chat on chapter feeds and community forums.
+* **Digital Sovereignty:** Robust offline-ready library cache and encrypted client-side sync.
+* **Publisher Workspace:** A sleek markdown-friendly editor optimized for distraction-free writing.
 
-## Table Of Contents
+### 🛒 3. CampCart
+A lightweight, zero-dependency, offline-first e-commerce checkout widget built to run entirely client-side.
+* **Easy Integration:** Single-script inclusion with simple HTML data attributes.
+* **Offline Transactions:** Complete shopping state persisted securely using `localStorage`.
+* **Zero Overhead:** No heavy databases or external dependencies needed for calculations.
 
-- [Features](#-features)
-- [Getting Started](#-getting-started)
-- [One click deploy](#one-click-deploy)
-- [Built With](#-built-with)
-- [Contributing](#-contributing)
-  - [Creating A Pull Request](#creating-a-pull-request)
-- [Acknowledgements](#-acknowledgements)
-- [Contributors](#-contributors)
-- [License](#-license)
+---
 
-## Features
+## 🚀 RebelRoot Web Portal
 
-- ⚡ **Next.js** - React framework for static rendering
-- **Best SEO setup** - Meta Tags, JSON-LD and Open Graph Tags
-- **[Tina CMS](https://tina.io/) integration** - local & (optional) production CMS
-- **Optimized for Web Vitals**
-- **Blog with MDX**
-- **Mailchimp Integration** - for newsletters
-- **Sendgrid Integration** - for sending emails
-- **Dark mode** - and customizable themes!
-- **No UI library** - just styled components, so you don't have to learn any new syntax
-- **One click deployment** - with Vercel or any other serverless deployment environment
-- **Eslint** - with Next.js's recommended settings and imports sorting rule
-- **Prettier**
+This repository contains the source code for the **RebelRoot Web Portal**, serving as the marketing website, documentation center, and showcase dashboard.
+
+### 🧰 Built With
+* **Framework:** [Next.js](https://nextjs.org/) (React 17, TypeScript)
+* **Styling:** [Styled Components](https://styled-components.com/) (Vanilla CSS-in-JS design system)
+* **Content Management:** [Tina CMS](https://tina.io/) (Local & cloud-ready editing)
+* **Performance:** Optimized for Green Web Vitals and SEO out of the box.
+
+---
 
 ## 🤓 Getting Started
 
-- Click `Use the template` or [this link](https://github.com/Blazity/next-saas-starter/generate)
-- Setup your [sendgrid](https://sendgrid.com/) API key and add it to environment variables (`SENDGRID_API_KEY` - `.env.local`)
-- Adjust the template to your needs (and checkout `env.ts` file)
-- Deploy the project on [Vercel](https://vercel.com/) **don't forget to add env variables**
-- _(optional)_ Create [Tina Cloud account](https://app.tina.io/), [a project](https://tina.io/docs/tina-cloud/) and fill these `NEXT_PUBLIC_ORGANIZATION_NAME`, `NEXT_PUBLIC_TINA_CLIENT_ID` env vars with proper values
-  > Tina's Content API authenticates directly with GitHub removing the need for users to create GitHub accounts. Access is granted through the dashboard, allowing users to login directly through your site and begin editing! Any changes that are saved by your editors will be commited to the configured branch in your GitHub repository.
-  - For more details [see the docs](https://tina.io/docs/tina-cloud/)
+### Prerequisites
+Make sure you have Node.js and either Yarn or NPM installed.
 
-```
-# run the dev mode
-$ yarn dev
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ParasxAgarwal/rebelroot.git
+   cd rebelroot
+   ```
 
-# run the prod mode
-yarn start
+2. Install dependencies:
+   ```bash
+   yarn install
+   # or
+   npm install
+   ```
 
-# build the app
-yarn build
-```
+3. Set up environment variables:
+   Copy `.env.example` to `.env.local` and configure your API keys (e.g. Sendgrid, TinaCMS):
+   ```bash
+   cp .env.example .env.local
+   ```
 
-> Hint: To edit the blog pages go to [/admin](http://localhost:3000/admin) and navigate to a blog page to edit it. To exit editing mode navigate to [/admin/logout](http://localhost:3000/admin/logout)
+4. Run the development server:
+   ```bash
+   yarn dev
+   # or
+   npm run dev
+   ```
+   Open [http://localhost:3059](http://localhost:3059) (configured in package.json) to view the portal locally.
 
-## 🚀 One click deploy
+5. Run Tina CMS locally for blog & content management:
+   ```bash
+   yarn dev:cms
+   # or
+   npm run dev:cms
+   ```
+   Navigate to `/admin` on your local server to edit posts and content interactively.
 
-Clone the repository and one-click deploy to Vercel for free!
-
-[![Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/Blazity/next-saas-starter)
-
-Clone the repository and one-click deploy to Netlify for free!
-
-[![Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Blazity/next-saas-starter)
-
-## 🧰 Built With
-
-- Statically generated pages with [**Next.js** ](https://github.com/vercel/next.js)
-- [Styled components](https://github.com/styled-components/styled-components/)
-- [MDX](https://github.com/mdx-js/mdx)
-- [TypeScript](https://github.com/Microsoft/TypeScript)
+---
 
 ## 🤲🏻 Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+We welcome contributions from fellow rebels! If you want to contribute to the portal or any of the flagship applications:
+1. Fork the repository.
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the branch (`git push origin feature/AmazingFeature`).
+5. Open a Pull Request.
 
-- If you have suggestions for adding or removing projects, feel free to [open an issue](https://github.com/Blazity/next-saas-starter/issues/new) to discuss it, or directly create a pull request after you edit the _README.md_ file with necessary changes.
-- Create individual PR for each suggestion.
+---
 
-### Creating A Pull Request
+## ❤️ Credits & Acknowledgements
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+RebelRoot was built using the awesome open-source [next-saas-starter](https://github.com/Blazity/next-saas-starter) template created by [Blazity](https://blazity.com/). We appreciate the Blazity team for providing a robust foundation for React/Next.js SaaS applications.
 
-## 😎 Acknowledgements
-
-Big thanks to authors of these libraries:
-
-- https://github.com/neg4n/next-api-og-image - generating open graph images
-- https://github.com/blazity/nextjs-color-mode - non-flickering dark mode
-- https://github.com/Brew-Brew/css-in-js-media - a convenient way of creating media queries
-
-## Support
-
-If you're looking for help or simply want to share your thoughts about the project, we encourage you to join our Discord community. Here's the link: [https://blazity.com/discord](https://blazity.com/discord). It's a space where we exchange ideas and help one another. Everyone's input is appreciated, and we look forward to welcoming you.
-
-## ✨ Contributors
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://bstefanski.com/"><img src="https://avatars.githubusercontent.com/u/28964599?v=4?s=64" width="64px;" alt=""/><br /><sub><b>Bart Stefanski</b></sub></a><br /><a href="https://github.com/Blazity/next-saas-starter/commits?author=bmstefanski" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/ilasota"><img src="https://avatars.githubusercontent.com/u/34578189?v=4?s=64" width="64px;" alt=""/><br /><sub><b>Igor Lasota</b></sub></a><br /><a href="https://github.com/Blazity/next-saas-starter/commits?author=ilasota" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/jbryn"><img src="https://avatars.githubusercontent.com/u/52970664?v=4?s=64" width="64px;" alt=""/><br /><sub><b>Jan Bryński</b></sub></a><br /><a href="https://github.com/Blazity/next-saas-starter/commits?author=jbryn" title="Code">💻</a></td>
-    <td align="center"><a href="https://www.logana.dev/"><img src="https://avatars.githubusercontent.com/u/43075109?v=4?s=64" width="64px;" alt=""/><br /><sub><b>Logan Anderson</b></sub></a><br /><a href="https://github.com/Blazity/next-saas-starter/commits?author=logan-anderson" title="Code">💻</a> <a href="https://github.com/Blazity/next-saas-starter/commits?author=logan-anderson" title="Documentation">📖</a> <a href="#mentoring-logan-anderson" title="Mentoring">🧑‍🏫</a></td>
-  </tr>
-</table>
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+---
 
 ## 📝 License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/Blazity/next-saas-starter/blob/main/LICENSE.md) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/ParasxAgarwal/rebelroot/blob/main/LICENSE) for more information.
