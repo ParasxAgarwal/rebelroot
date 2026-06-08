@@ -7,37 +7,35 @@ import SectionTitle from 'components/SectionTitle';
 export default function PricingTablesSection() {
   return (
     <Wrapper>
-      <SectionTitle>Flexible pricing for agile teams</SectionTitle>
+      <SectionTitle>Support RebelRoot Open Source Development</SectionTitle>
       <AutofitGrid>
         <PricingCard
-          title="free"
-          description="Give us a try for free"
-          benefits={['1 seat', '1 active project', 'Ulimited viewers', '10 blocks']}
+          title="Community"
+          description="Free use of all our products"
+          benefits={['Access to all source code', 'Comprehensive self-hosting guides', 'Community discussions & Matrix chat', 'Standard bug reporting']}
         >
           $0<span>/month</span>
         </PricingCard>
         <PricingCard
-          title="Starter"
-          description="Best for individual desginers"
-          benefits={['1 seat', '3 active project', 'Ulimited viewers', '100 blocks', 'CSV Downloader', 'Password protection']}
+          title="Developer Sponsor"
+          description="Help fund active feature development"
+          benefits={['Backer badge on GitHub & site', 'Prioritized bug & feature requests', 'Early beta builds of new projects', 'Access to exclusive dev channels']}
           isOutlined
         >
-          $29<span>/month</span>
+          $15<span>/month</span>
         </PricingCard>
         <PricingCard
-          title="Premium"
-          description="Get your team together"
+          title="Enterprise Partner"
+          description="For companies running on our stack"
           benefits={[
-            '10 seat',
-            '10 active project',
-            'Ulimited viewers',
-            'Unlimited blocks',
-            'CSV Downloader',
-            'Password protection',
-            'Customization',
+            'Technical advisory consultations',
+            'Custom integration assistance',
+            'Priority security disclosures',
+            'Corporate logo placement on site & repos',
+            'Dedicated chat channel with main developers'
           ]}
         >
-          $79<span>/month</span>
+          $150<span>/month</span>
         </PricingCard>
       </AutofitGrid>
     </Wrapper>

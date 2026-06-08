@@ -32,3 +32,9 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# local npm cache and logs
+.npm-cache/
+.npm-home/
+.npm-logs/
+.npmrc

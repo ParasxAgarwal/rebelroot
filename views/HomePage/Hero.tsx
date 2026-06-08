@@ -14,19 +14,20 @@ export default function Hero() {
   return (
     <HeroWrapper>
       <Contents>
-        <CustomOverTitle>the coolest, saas product you have ever seen</CustomOverTitle>
-        <Heading>Make your life easier with our SaaS</Heading>
+        <CustomOverTitle>Independent &amp; Open Source Collective</CustomOverTitle>
+        <Heading>Software Built for Rebels. By Rebels.</Heading>
         <Description>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, tempora qui. Explicabo voluptate iure ipsum molestias
-          repudiandae perspiciatis nostrum praesentium, unde pariatur tempora magni rem. Necessitatibus facilis obcaecati ratione.
+          We are a parent group of independent developers building high-quality, privacy-focused, and fully auditable applications to solve the root problems of digital sovereignty. Powering products like Omni Browser, MOCNovel, and CampCart.
         </Description>
         <CustomButtonGroup>
-          <Button onClick={() => setIsModalOpened(true)}>
-            Subscribe to the newsletter <span>&rarr;</span>
-          </Button>
-          <NextLink href="#whitepaper" passHref>
+          <NextLink href="/features" passHref>
+            <Button>
+              Explore Products <span>&rarr;</span>
+            </Button>
+          </NextLink>
+          <NextLink href="/pricing" passHref>
             <Button transparent>
-              Features <span>&rarr;</span>
+              Support Our Work <span>&rarr;</span>
             </Button>
           </NextLink>
         </CustomButtonGroup>

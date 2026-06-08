@@ -1,4 +1,4 @@
-const CopyPlugin = require('copy-webpack-plugin');
+// copy-webpack-plugin removed — not used in this config (required ajv v8, Next 12 ships v6)
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',

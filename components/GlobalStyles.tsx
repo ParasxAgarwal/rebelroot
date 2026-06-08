@@ -12,35 +12,35 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyle = createGlobalStyle`
 
 .next-light-theme {
-  --background: 251,251,253;
+  --background: 248,250,252;
   --secondBackground: 255,255,255;
-  --text: 10,18,30;
+  --text: 15,23,42;
   --textSecondary: 255,255,255;
-  --primary: 22,115,255; 
-  --secondary: 10,18,30;
-  --tertiary: 231,241,251;
+  --primary: 239,68,68; 
+  --secondary: 15,23,42;
+  --tertiary: 241,245,249;
   --cardBackground: 255,255,255;
   --inputBackground: 255,255,255;
   --navbarBackground: 255,255,255;
-  --modalBackground: 251,251,253;
-  --errorColor: 207,34,46;
-  --logoColor: #243A5A;
+  --modalBackground: 248,250,252;
+  --errorColor: 220,38,38;
+  --logoColor: #ef4444;
 }
 
 .next-dark-theme {
-  --background: 26,32,44;
-  --secondBackground: 45,55,72;
-  --text: 237,237,238;
+  --background: 9,9,11;
+  --secondBackground: 20,20,23;
+  --text: 244,244,245;
   --textSecondary: 255,255,255;
-  --primary: 22,115,255; 
-  --secondary: 10,18,30;
-  --tertiary: 231,241,251;
-  --cardBackground: 45,55,72;
-  --inputBackground: 45,55,72;
-  --navbarBackground: 45,55,72;
-  --modalBackground: 26,32,44;
-  --errorColor: 207,34,46;
-  --logoColor: #fff;
+  --primary: 239,68,68; 
+  --secondary: 24,24,27;
+  --tertiary: 39,39,42;
+  --cardBackground: 20,20,23;
+  --inputBackground: 24,24,27;
+  --navbarBackground: 9,9,11;
+  --modalBackground: 9,9,11;
+  --errorColor: 239,68,68;
+  --logoColor: #ef4444;
 }
 
 :root {

@@ -11,28 +11,28 @@ import { media } from 'utils/media';
 const TESTIMONIALS = [
   {
     companyLogoUrl: '/testimonials/company-logo-1.svg',
-    content: `Really good. I am so pleased with this product. I didn't even need training.`,
+    content: `Omni Browser is incredibly fast and respects my privacy. The installation size is extremely small, and it doesn't drain my phone's battery like mainstream commercial browsers do.`,
     author: {
-      name: 'Clyde Edwards',
-      title: 'Very Serious Man',
+      name: 'Elena Rostova',
+      title: 'Android Contributor',
       avatarUrl: '/testimonials/author-photo-1.jpeg',
     },
   },
   {
     companyLogoUrl: '/testimonials/company-logo-2.svg',
-    content: `It's really wonderful. I use saas product often. Thank You! Saas product has really helped our business.`,
+    content: `MOCNovel has allowed me to publish my fantasy novels directly to readers without worrying about platform licensing fees, advertisements, or algorithms.`,
     author: {
-      name: 'Jimmy Hunter',
-      title: 'Sigma Male University Graduate',
+      name: 'Marcus Vance',
+      title: 'Independent Author',
       avatarUrl: '/testimonials/author-photo-2.jpeg',
     },
   },
   {
     companyLogoUrl: '/testimonials/company-logo-3.svg',
-    content: `Since I invested in saas product I made over 100,000 dollars profits. It really saves me time and effort. saas product is exactly what our business has been lacking.`,
+    content: `Integrating CampCart into our web app was a breeze. The API is clean, the checkout flow is fast, and our customers love the offline transaction support.`,
     author: {
-      name: 'Marjorie Morgan',
-      title: 'Chief Chad Officer',
+      name: 'Sarah Jenkins',
+      title: 'Lead Frontend Engineer',
       avatarUrl: '/testimonials/author-photo-3.jpeg',
     },
   },
