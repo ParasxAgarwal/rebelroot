@@ -71,6 +71,9 @@ export default function AboutPage() {
                   <Button href="https://github.com/ParasxAgarwal" target="_blank" rel="noopener noreferrer">
                     Follow on GitHub <span>&rarr;</span>
                   </Button>
+                  <Button href="https://1i81vatywd5bjk3l.public.blob.vercel-storage.com/Paras_Resume.pdf" target="_blank" rel="noopener noreferrer" transparent>
+                    View Resume <span>&rarr;</span>
+                  </Button>
                 </ButtonGroup>
               </FounderInfo>
             </FounderCard>
@@ -214,8 +217,10 @@ const FounderBio = styled.p`
 
 const ButtonGroup = styled.div`
   display: flex;
+  gap: 2rem;
   
   ${media('<=tablet')} {
     justify-content: center;
+    flex-wrap: wrap;
   }
 `;
