@@ -24,7 +24,7 @@ cd omni-browser`;
         <IntroSection>
           <IntroContent>
             <BrowserLogoWrapper>
-              <LogoIcon>🌐</LogoIcon>
+              <BrowserLogo src="/ic_omni_logo.webp" alt="Omni Browser Logo" />
             </BrowserLogoWrapper>
             <OverTitle>Secure Android Navigator</OverTitle>
             <Title>Desktop-Grade Performance in Your Pocket</Title>
@@ -367,8 +367,10 @@ const BrowserLogoWrapper = styled.div`
   margin-bottom: 3rem;
 `;
 
-const LogoIcon = styled.span`
-  font-size: 6rem;
+const BrowserLogo = styled.img`
+  width: 8rem;
+  height: 8rem;
+  object-fit: contain;
 `;
 
 const Title = styled.h1`
