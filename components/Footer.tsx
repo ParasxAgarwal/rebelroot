@@ -15,13 +15,14 @@ const footerItems: FooterItems = [
     items: [
       { title: 'Privacy Policy', href: '/privacy-policy' },
       { title: 'Cookies Policy', href: '/cookies-policy' },
+      { title: 'Omni Privacy Policy', href: '/omnibrowser/privacy-policy' },
     ],
   },
   {
     title: 'Products',
     items: [
-      { title: 'Omni Browser', href: '/features' },
-      { title: 'MOCNovel', href: '/features' },
+      { title: 'Omni Browser', href: '/omnibrowser' },
+      { title: 'MOCNovel', href: '/mocnovel' },
       { title: 'CampCart', href: '/features' },
     ],
   },

@@ -288,6 +288,9 @@ cd omni-browser`;
                 <Button href="https://github.com/rebelroot/omni-browser" target="_blank" rel="noopener noreferrer">
                   GitHub Repository <span>&rarr;</span>
                 </Button>
+                <Button href="/omnibrowser/privacy-policy">
+                  Privacy Policy <span>&rarr;</span>
+                </Button>
               </ButtonGroup>
             </CTAInner>
           </Container>
@@ -582,6 +585,13 @@ const CTAInner = styled.div`
 const ButtonGroup = styled.div`
   display: flex;
   justify-content: center;
+  gap: 2rem;
+
+  ${media('<=tablet')} {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
 `;
 
 const ComparisonSection = styled.section`
