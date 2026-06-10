@@ -11,7 +11,7 @@ export default function OmniBrowserPrivacyPolicyPage() {
       <PrivacyPolicyContainer>
         <RichText>
           <MetaDataBlock>
-            <p><strong>Last Updated:</strong> June 8, 2026</p>
+            <p><strong>Last Updated:</strong> June 10, 2026</p>
             <p><strong>Publisher:</strong> RebelRoot</p>
             <p><strong>App Name:</strong> Omni Browser</p>
             <p><strong>Package Name:</strong> <code>com.rebelroot.omni</code></p>
