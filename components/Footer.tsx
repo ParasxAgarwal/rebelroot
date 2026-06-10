@@ -22,7 +22,7 @@ const footerItems: FooterItems = [
     items: [
       { title: 'Omni Browser', href: '/omnibrowser' },
       { title: 'MOCNovel', href: '/mocnovel' },
-      { title: 'CampCart', href: '/features' },
+      { title: 'CampCart', href: '/campcart' },
     ],
   },
   {

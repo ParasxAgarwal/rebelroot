@@ -25,7 +25,8 @@ const FEATURES = [
     imageUrl: '/grid-icons/asset-3.svg',
     title: 'CampCart',
     description:
-      'A lightning-fast, offline-first e-commerce cart widget that easily plugs into static blogs, sites, and custom platforms.',
+      'A secure, edge-deployed peer-to-peer campus exchange marketplace for students to trade textbooks, electronics, and dorm gear safely.',
+    href: '/campcart',
   },
   {
     imageUrl: '/grid-icons/asset-4.svg',
