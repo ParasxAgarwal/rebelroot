@@ -29,10 +29,10 @@ const TESTIMONIALS = [
   },
   {
     companyLogoUrl: '/testimonials/company-logo-3.svg',
-    content: `Integrating CampCart into our web app was a breeze. The API is clean, the checkout flow is fast, and our customers love the offline transaction support.`,
+    content: `CampCart has completely revolutionized how we trade on campus. Transactions are extremely secure with Stripe and UPI, and we can buy or sell textbooks and dorm gear in seconds.`,
     author: {
-      name: 'Sarah Jenkins',
-      title: 'Lead Frontend Engineer',
+      name: 'Aarav Mehta',
+      title: 'Verified Student Seller',
       avatarUrl: '/testimonials/author-photo-3.jpeg',
     },
   },

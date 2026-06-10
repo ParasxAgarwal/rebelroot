@@ -37,10 +37,10 @@ A modern, zero-telemetry, zero-ad publishing platform designed to connect indepe
 * **Publisher Workspace:** A sleek markdown-friendly editor optimized for distraction-free writing.
 
 ### 🛒 3. CampCart
-A lightweight, zero-dependency, offline-first e-commerce checkout widget built to run entirely client-side.
-* **Easy Integration:** Single-script inclusion with simple HTML data attributes.
-* **Offline Transactions:** Complete shopping state persisted securely using `localStorage`.
-* **Zero Overhead:** No heavy databases or external dependencies needed for calculations.
+A secure, edge-deployed peer-to-peer campus exchange marketplace for students to trade textbooks, electronics, and dorm gear safely.
+* **Verified Network:** Account registration checks ensure only students with verified college/university domains can sign up.
+* **Escrow Settlement:** Secure payment checkouts via Stripe and Juspay SDK handle money transfers with student verification.
+* **Real-time Interaction:** Persistent WebSocket connections enable live chat, negotiation, and safe zone exchanges.
 
 ---
 
