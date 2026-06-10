@@ -13,11 +13,10 @@ export default function Cta() {
     <CtaWrapper>
       <Container>
         <Stack>
-          <OverTitle>Lorem ipsum dolor sit amet</OverTitle>
-          <SectionTitle>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus delectus?</SectionTitle>
+          <OverTitle>JOIN THE COLLECTIVE</OverTitle>
+          <SectionTitle>Support open-source development and digital sovereignty</SectionTitle>
           <Description>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae accusamus deleniti nihil quas tempora numquam, vitae
-            culpa.
+            RebelRoot is an independent, developer-led collective dedicated to building tools that put users back in control of their digital lives. Join our community to receive updates on our flagship projects and future releases.
           </Description>
           <ButtonGroup>
             <NextLink href="#early-access" passHref>
