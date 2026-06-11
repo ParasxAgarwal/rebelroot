@@ -29,6 +29,13 @@ const FEATURES = [
     href: '/campcart',
   },
   {
+    imageUrl: '/grid-icons/asset-5.svg',
+    title: 'Ved Astra',
+    description:
+      'A premium, open-source Vedic astrology app built with Jetpack Compose, FastAPI, and Gemini AI for precise Kundli, Panchang, and compatibility matching.',
+    href: '/vedastra',
+  },
+  {
     imageUrl: '/grid-icons/asset-4.svg',
     title: 'More Projects Incoming',
     description:

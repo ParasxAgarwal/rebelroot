@@ -23,6 +23,7 @@ const footerItems: FooterItems = [
       { title: 'Omni Browser', href: '/omnibrowser' },
       { title: 'MOCNovel', href: '/mocnovel' },
       { title: 'CampCart', href: '/campcart' },
+      { title: 'Ved Astra', href: '/vedastra' },
     ],
   },
   {
