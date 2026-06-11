@@ -15,6 +15,7 @@ const footerItems: FooterItems = [
       { title: 'Privacy Policy', href: '/privacy-policy' },
       { title: 'Cookies Policy', href: '/cookies-policy' },
       { title: 'Omni Privacy Policy', href: '/omnibrowser/privacy-policy' },
+      { title: 'Ved Astra Privacy Policy', href: '/vedastra/privacy-policy' },
     ],
   },
   {

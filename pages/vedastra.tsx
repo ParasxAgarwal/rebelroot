@@ -317,9 +317,14 @@ npm run dev`;
             <CTAInner>
               <h3>Contribute to Ved Astra</h3>
               <p>We welcome code audits, additional Astro-remedy formulations, translation updates, and mobile layout fixes.</p>
-              <Button href="https://github.com/rebelroot" target="_blank" rel="noopener noreferrer">
-                Explore Repository <span>&rarr;</span>
-              </Button>
+              <ButtonGroup>
+                <Button href="https://github.com/rebelroot" target="_blank" rel="noopener noreferrer">
+                  Explore Repository <span>&rarr;</span>
+                </Button>
+                <Button href="/vedastra/privacy-policy">
+                  Privacy Policy <span>&rarr;</span>
+                </Button>
+              </ButtonGroup>
             </CTAInner>
           </Container>
         </BottomCTASection>
@@ -415,6 +420,18 @@ const Subtitle = styled.p`
 const CTAWrapper = styled.div`
   display: flex;
   gap: 2rem;
+`;
+
+const ButtonGroup = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+
+  ${media('<=tablet')} {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const LifecycleSection = styled.section`
