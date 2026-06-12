@@ -81,44 +81,99 @@ cd omni-browser`;
             <SectionTitle>Engineered Features</SectionTitle>
             <FeaturesGrid>
               <FeatureCard>
-                <CardIcon>🛡️</CardIcon>
-                <CardTitle>Privacy & Hardened Security</CardTitle>
-                <CardList>
-                  <li><strong>uBlock Origin:</strong> Embedded blocker strips ads, malicious analytics, cookie modals, and telemetry.</li>
-                  <li><strong>Incognito Sandbox:</strong> Private Browsing isolates storage, ensuring session tracking data is completely deleted.</li>
-                  <li><strong>Instant Session Burn:</strong> One-tap trigger purges active session cache, cookies, and system memory.</li>
-                  <li><strong>Keystore Locker:</strong> Local down folder encrypted using hardware-backed AES-256 standards.</li>
-                </CardList>
+                <CardIconWrapper>🔌</CardIconWrapper>
+                <CardTitle>Extensions Manager</CardTitle>
+                <CardDescription>
+                  Desktop-Class Web Extensions Manager powered by GeckoView. Full mobile support for desktop add-ons, pre-bundled with <strong>uBlock Origin</strong>, <strong>Universal Text Copy</strong>, and <strong>Aggressive Media Grabber</strong>, complete with a dynamic "Syncing" toggle UI.
+                </CardDescription>
               </FeatureCard>
 
               <FeatureCard>
-                <CardIcon>🔌</CardIcon>
-                <CardTitle>Extensibility & Add-ons</CardTitle>
-                <CardList>
-                  <li><strong>WebExtensions Support:</strong> Direct compatibility with standard Firefox mobile add-ons (.xpi files).</li>
-                  <li><strong>Native Options Router:</strong> Access and configure extension panels directly within standard browser tabs.</li>
-                  <li><strong>Custom Pre-bundling:</strong> Add your favorite productivity extensions into assets prior to deployment.</li>
-                </CardList>
+                <CardIconWrapper>🧠</CardIconWrapper>
+                <CardTitle>On-Device ML Translator</CardTitle>
+                <CardDescription>
+                  Translate entire web pages via proxies or process private, 100% offline text translation across 14 languages utilizing local <strong>Google ML Kit</strong> models.
+                </CardDescription>
               </FeatureCard>
 
               <FeatureCard>
-                <CardIcon>🎥</CardIcon>
-                <CardTitle>Decoded Playback & Sniffer</CardTitle>
-                <CardList>
-                  <li><strong>Stream Interception:</strong> Sniffer service detects HLS, DASH, Blob, and MSE media streams dynamically.</li>
-                  <li><strong>Gesture ExoPlayer:</strong> Fully featured custom video player utilizing hardware acceleration.</li>
-                  <li><strong>Premium UI Controls:</strong> Gestures for brightness, audio levels, picture-in-picture, and background playback.</li>
-                </CardList>
+                <CardIconWrapper>🔐</CardIconWrapper>
+                <CardTitle>Safe Locker Vault</CardTitle>
+                <CardDescription>
+                  A secure, biometric-protected private vault. A sandboxed directory that uses hardware-backed <strong>AES-256 encryption (EncryptedFile)</strong> and fingerprint/PIN credentials to safeguard sensitive files.
+                </CardDescription>
               </FeatureCard>
 
               <FeatureCard>
-                <CardIcon>🧠</CardIcon>
-                <CardTitle>On-Device Intelligence</CardTitle>
-                <CardList>
-                  <li><strong>Offline Translator:</strong> Secure, local translation powered by neural models (Google ML Kit).</li>
-                  <li><strong>Smart Scanner:</strong> Scan documents with perspective alignment and edge detection.</li>
-                  <li><strong>QR / Barcode Utility:</strong> Instant extraction of Wi-Fi credentials, contact cards, and URLs.</li>
-                </CardList>
+                <CardIconWrapper>📄</CardIconWrapper>
+                <CardTitle>Doc Scanner (ML Edge)</CardTitle>
+                <CardDescription>
+                  Zero-permission document scanner powered by Google Play Services ML Kit. Automatically detects document edges, straightens, crops, and optimizes scans completely offline.
+                </CardDescription>
+              </FeatureCard>
+
+              <FeatureCard>
+                <CardIconWrapper>🔍</CardIconWrapper>
+                <CardTitle>QR Tools Suite</CardTitle>
+                <CardDescription>
+                  Built-in QR code scanner that requires zero camera permissions, paired with a custom QR code generator for instant URL and text sharing.
+                </CardDescription>
+              </FeatureCard>
+
+              <FeatureCard>
+                <CardIconWrapper>📋</CardIconWrapper>
+                <CardTitle>Universal Text Copy</CardTitle>
+                <CardDescription>
+                  Overrides annoying website copy protections (such as <code>user-select: none</code> or custom copy-blocker scripts) to force-enable text selection.
+                </CardDescription>
+              </FeatureCard>
+
+              <FeatureCard>
+                <CardIconWrapper>📥</CardIconWrapper>
+                <CardTitle>Aggressive Media Grabber</CardTitle>
+                <CardDescription>
+                  Automatically sniffs and intercepts background network streams (including HLS/m3u8, DASH, and video blobs) for offline play, routed directly to the native player.
+                </CardDescription>
+              </FeatureCard>
+
+              <FeatureCard>
+                <CardIconWrapper>🛠️</CardIconWrapper>
+                <CardTitle>Unified Quick Tools</CardTitle>
+                <CardDescription>
+                  A one-tap bottom sheet housing scanners, translators, lockers, bookmarks, configuration settings, and browsing history in a clean, unified drawer.
+                </CardDescription>
+              </FeatureCard>
+
+              <FeatureCard>
+                <CardIconWrapper>📝</CardIconWrapper>
+                <CardTitle>Interactive Page Editor</CardTitle>
+                <CardDescription>
+                  "Edit Site" utility turns any loaded webpage into an interactive edit workspace. Tap and modify text in-place for presentation mockups and layout adjustments.
+                </CardDescription>
+              </FeatureCard>
+
+              <FeatureCard>
+                <CardIconWrapper>🖨️</CardIconWrapper>
+                <CardTitle>Clean PDF Maker</CardTitle>
+                <CardDescription>
+                  "Save PDF" feature captures and prints clean PDF copies of webpages, automatically stripping header banners, footer bars, and margins.
+                </CardDescription>
+              </FeatureCard>
+
+              <FeatureCard>
+                <CardIconWrapper>🎥</CardIconWrapper>
+                <CardTitle>Advanced Video Player</CardTitle>
+                <CardDescription>
+                  Native ExoPlayer with swipe gesture controls for brightness (left margin) and volume (right margin), background audio play, and floating Picture-in-Picture (PiP) window overlay.
+                </CardDescription>
+              </FeatureCard>
+
+              <FeatureCard>
+                <CardIconWrapper>📌</CardIconWrapper>
+                <CardTitle>Instant Web App Pinning</CardTitle>
+                <CardDescription>
+                  "Pin Web App" generates shortcut icons on your Android home launcher screen to launch websites in dedicated, sandboxed WebApp containers.
+                </CardDescription>
               </FeatureCard>
             </FeaturesGrid>
           </Container>
@@ -216,6 +271,27 @@ cd omni-browser`;
                     <td>No</td>
                     <td>No</td>
                     <td>Yes (Firefox Focus only)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Universal Text Copy</strong></td>
+                    <td>Yes (Bypasses restriction)</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>No</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Interactive Page Editor</strong></td>
+                    <td>Yes (In-place tap-to-edit)</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>No</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Instant Web App Pinning</strong></td>
+                    <td>Yes (Launcher shortcuts)</td>
+                    <td>Yes (Standard PWA)</td>
+                    <td>Yes (Standard PWA)</td>
+                    <td>Limited</td>
                   </tr>
                 </tbody>
               </ComparisonTable>
@@ -472,9 +548,13 @@ const FeaturesSection = styled.section``;
 
 const FeaturesGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 4rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
   margin-top: 5rem;
+
+  ${media('<=desktop')} {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   ${media('<=tablet')} {
     grid-template-columns: 1fr;
@@ -484,46 +564,48 @@ const FeaturesGrid = styled.div`
 const FeatureCard = styled.div`
   background: rgb(var(--secondBackground));
   border: 1px solid rgba(var(--text), 0.05);
-  border-radius: 1rem;
-  padding: 4rem;
-  box-shadow: var(--shadow-md);
-  transition: transform 0.2s, border-color 0.2s;
+  border-radius: 1.5rem;
+  padding: 3rem;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 
   &:hover {
     transform: translateY(-5px);
-    border-color: rgba(var(--primary), 0.3);
-  }
-
-  ${media('<=tablet')} {
-    padding: 2.5rem;
+    border-color: rgba(var(--primary), 0.4);
+    box-shadow: 0 15px 30px -10px rgba(var(--primary), 0.15);
   }
 `;
 
-const CardIcon = styled.div`
-  font-size: 4rem;
+const CardIconWrapper = styled.div`
+  font-size: 3.5rem;
   margin-bottom: 2rem;
+  width: 6rem;
+  height: 6rem;
+  background: linear-gradient(135deg, rgba(var(--primary), 0.1) 0%, rgba(var(--secondary), 0.1) 100%);
+  border-radius: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(var(--primary), 0.15);
 `;
 
 const CardTitle = styled.h3`
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  color: rgb(var(--text));
 `;
 
-const CardList = styled.ul`
-  list-style: none;
-  padding: 0;
-  margin: 0;
+const CardDescription = styled.p`
+  font-size: 1.45rem;
+  line-height: 1.6;
+  opacity: 0.85;
+  color: rgb(var(--textSecondary));
 
-  li {
-    font-size: 1.5rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-    opacity: 0.85;
-
-    strong {
-      color: rgb(var(--text));
-    }
+  strong {
+    color: rgb(var(--text));
   }
 `;
 
