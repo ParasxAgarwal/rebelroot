@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import styled from 'styled-components';
 import Page from 'components/Page';
 import Container from 'components/Container';
@@ -12,6 +13,33 @@ export default function CampCartPage() {
       title="CampCart"
       description="A secure peer-to-peer campus exchange marketplace for colleges and universities built with React, Cloudflare Workers, and Stripe/Juspay payments."
     >
+      <Head>
+        <meta name="keywords" content="CampCart, RebelRoot, campus marketplace, student exchange, textbook exchange, buy sell college, campus classifieds, student e-commerce, Cloudflare Workers marketplace" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              "name": "CampCart",
+              "operatingSystem": "Web",
+              "applicationCategory": "BusinessApplication",
+              "offers": {
+                "@type": "Offer",
+                "price": "0.00",
+                "priceCurrency": "USD"
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "RebelRoot",
+                "url": "https://rebelroot.xyz"
+              },
+              "downloadUrl": "https://github.com/RebelRoot/CAMPCART",
+              "description": "A secure peer-to-peer campus exchange marketplace for colleges and universities built with React, Cloudflare Workers, and Stripe/Juspay payments."
+            })
+          }}
+        />
+      </Head>
       <MainWrapper>
         {/* Project Intro Section */}
         <IntroSection>

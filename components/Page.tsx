@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import { PropsWithChildren } from 'react';
 import styled from 'styled-components';
 import { EnvVars } from 'env';
@@ -12,13 +13,33 @@ export interface PageProps {
 }
 
 export default function Page({ title, description, children }: PropsWithChildren<PageProps>) {
+  const router = useRouter();
+  const canonicalUrl = `${EnvVars.URL.replace(/\/$/, '')}${router.asPath.split('?')[0]}`;
+  const fullTitle = `${title} | ${EnvVars.SITE_NAME}`;
+
   return (
     <>
       <Head>
-        <title>
-          {title} | {EnvVars.SITE_NAME}
-        </title>
+        <title>{fullTitle}</title>
         <meta name="description" content={description} />
+        <link rel="canonical" href={canonicalUrl} />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={fullTitle} />
+        {description && <meta property="og:description" content={description} />}
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:site_name" content={EnvVars.SITE_NAME} />
+        <meta property="og:image" content={`${EnvVars.URL}ic_omni_logo.webp`} />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={fullTitle} />
+        {description && <meta name="twitter:description" content={description} />}
+        <meta name="twitter:image" content={`${EnvVars.URL}ic_omni_logo.webp`} />
+        
+        {/* Search Engine Directives */}
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
       </Head>
       <Wrapper>
         <HeaderContainer>

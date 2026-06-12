@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import styled from 'styled-components';
 import Page from 'components/Page';
 import Container from 'components/Container';
@@ -12,6 +13,33 @@ export default function MocNovelPage() {
       title="MOC Novel"
       description="A next-generation open-source web novel platform featuring conversational AI recommendations, real-time community tools, and unified edge deployment."
     >
+      <Head>
+        <meta name="keywords" content="MOC Novel, RebelRoot, web novel, web novels, reading platform, open source publishing, markdown editor authors, independent publishing, ad-free reader" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              "name": "MOC Novel",
+              "operatingSystem": "Web, Android, iOS",
+              "applicationCategory": "BooksApplication",
+              "offers": {
+                "@type": "Offer",
+                "price": "0.00",
+                "priceCurrency": "USD"
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "RebelRoot",
+                "url": "https://rebelroot.xyz"
+              },
+              "downloadUrl": "https://github.com/rebelroot",
+              "description": "A next-generation open-source web novel platform featuring conversational AI recommendations, real-time community tools, and unified edge deployment."
+            })
+          }}
+        />
+      </Head>
       <MainWrapper>
         {/* Project Intro Section */}
         <IntroSection>

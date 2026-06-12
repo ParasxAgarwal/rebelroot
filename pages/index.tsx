@@ -17,10 +17,63 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
   return (
     <>
       <Head>
-        <title>{EnvVars.SITE_NAME}</title>
+        <title>{EnvVars.SITE_NAME} | Open-Source &amp; Privacy-First Digital Tools</title>
         <meta
           name="description"
-          content="RebelRoot is an independent, developer-led collective designing secure, open-source, and privacy-first digital tools like Omni Browser and MOCNovel."
+          content="RebelRoot is an independent, developer-led collective designing secure, open-source, and privacy-first digital tools like Omni Browser, MOCNovel, CampCart, and Ved Astra."
+        />
+        <meta name="keywords" content="RebelRoot, open source collective, Omni Browser, MOCNovel, CampCart, Ved Astra, privacy mobile browser, secure reading app, student marketplace, edge computing, decentralized apps, Gemini AI" />
+        <link rel="canonical" href="https://rebelroot.xyz" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="RebelRoot | Open-Source &amp; Privacy-First Digital Tools" />
+        <meta property="og:description" content="RebelRoot is an independent, developer-led collective designing secure, open-source, and privacy-first digital tools like Omni Browser, MOCNovel, CampCart, and Ved Astra." />
+        <meta property="og:url" content="https://rebelroot.xyz" />
+        <meta property="og:site_name" content="RebelRoot" />
+        <meta property="og:image" content="https://rebelroot.xyz/ic_omni_logo.webp" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="RebelRoot | Open-Source &amp; Privacy-First Digital Tools" />
+        <meta name="twitter:description" content="RebelRoot is an independent, developer-led collective designing secure, open-source, and privacy-first digital tools like Omni Browser, MOCNovel, CampCart, and Ved Astra." />
+        <meta name="twitter:image" content="https://rebelroot.xyz/ic_omni_logo.webp" />
+
+        {/* Search Engine Directives */}
+        <meta name="robots" content="index, follow" />
+
+        {/* Structured Schema Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "RebelRoot",
+              "url": "https://rebelroot.xyz",
+              "logo": "https://rebelroot.xyz/ic_omni_logo.webp",
+              "description": "An independent, developer-led collective designing secure, open-source, and privacy-first digital tools like Omni Browser, MOCNovel, CampCart, and Ved Astra.",
+              "sameAs": [
+                "https://github.com/rebelroot"
+              ]
+            })
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "RebelRoot",
+              "url": "https://rebelroot.xyz",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://rebelroot.xyz/blog?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
+            })
+          }}
         />
       </Head>
       <HomepageWrapper>

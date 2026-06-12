@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import styled from 'styled-components';
 import Page from 'components/Page';
 import Container from 'components/Container';
@@ -19,6 +20,33 @@ cd omni-browser`;
       title="Omni Browser"
       description="A premium, privacy-first mobile web browser for Android built with Jetpack Compose & GeckoView engine."
     >
+      <Head>
+        <meta name="keywords" content="Omni Browser, RebelRoot, privacy browser, Android browser, GeckoView browser, uBlock Origin mobile, local ML translation, private vault app, secure mobile browser" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              "name": "Omni Browser",
+              "operatingSystem": "Android",
+              "applicationCategory": "BrowserApplication",
+              "offers": {
+                "@type": "Offer",
+                "price": "0.00",
+                "priceCurrency": "USD"
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "RebelRoot",
+                "url": "https://rebelroot.xyz"
+              },
+              "downloadUrl": "https://github.com/rebelroot/omni-browser",
+              "description": "A premium, privacy-first mobile web browser for Android built with Jetpack Compose & GeckoView engine. Features built-in uBlock Origin, offline ML translation, safe locker vault, and document scanner."
+            })
+          }}
+        />
+      </Head>
       <MainWrapper>
         {/* Hero Section */}
         <IntroSection>

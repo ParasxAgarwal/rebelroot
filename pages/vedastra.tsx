@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import styled from 'styled-components';
 import Page from 'components/Page';
 import Container from 'components/Container';
@@ -22,8 +23,35 @@ npm run dev`;
   return (
     <Page
       title="Ved Astra"
-      description="A premium, open-source Vedic astrology platform combining classical Kundli & Panchang computation with Google Gemini's reasoning. Built with Jetpack Compose, FastAPI, and Gemini AI."
+      description="A premium, open-source Vedic astrology platform combining classical Kundli &amp; Panchang computation with Google Gemini&apos;s reasoning. Built with Jetpack Compose, FastAPI, and Gemini AI."
     >
+      <Head>
+        <meta name="keywords" content="Ved Astra, Openved, RebelRoot, Vedic astrology, Kundli matchmaking, Panchang calculation, Lal Kitab Rin, Sade Sati transit, Manglik Dosha, Google Gemini AI astrology" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              "name": "Ved Astra",
+              "operatingSystem": "Android, Web",
+              "applicationCategory": "LifestyleApplication",
+              "offers": {
+                "@type": "Offer",
+                "price": "0.00",
+                "priceCurrency": "USD"
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "RebelRoot",
+                "url": "https://rebelroot.xyz"
+              },
+              "downloadUrl": "https://github.com/rebelroot/Openved",
+              "description": "A premium, open-source Vedic astrology platform combining classical Kundli & Panchang computation with Google Gemini's reasoning. Built with Jetpack Compose, FastAPI, and Gemini AI."
+            })
+          }}
+        />
+      </Head>
       <MainWrapper>
         {/* Hero Section */}
         <IntroSection>
