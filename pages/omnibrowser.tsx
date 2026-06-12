@@ -601,8 +601,7 @@ const CardTitle = styled.h3`
 const CardDescription = styled.p`
   font-size: 1.45rem;
   line-height: 1.6;
-  opacity: 0.85;
-  color: rgb(var(--textSecondary));
+  color: rgba(var(--text), 0.75);
 
   strong {
     color: rgb(var(--text));
