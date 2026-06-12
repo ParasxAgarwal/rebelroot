@@ -69,6 +69,15 @@ cd omni-browser`;
               Omni Browser is a state-of-the-art mobile browser developed by the RebelRoot collective. Powered by Mozilla&apos;s GeckoView engine, it provides built-in ad blocking, Firefox extensions, offline ML translation, and secure sandbox mechanics.
             </Subtitle>
 
+            <CTAWrapper>
+              <Button href="https://play.google.com/store/apps/details?id=com.rebelroot.omni" target="_blank" rel="noopener noreferrer">
+                Download on Google Play <span>&rarr;</span>
+              </Button>
+              <Button href="https://github.com/rebelroot/omni-browser" target="_blank" rel="noopener noreferrer" transparent>
+                View Source on GitHub <span>&rarr;</span>
+              </Button>
+            </CTAWrapper>
+
             <ScreenshotWrapper>
               <ScreenshotImage src="/omni-browser-screenshot.png" alt="Omni Browser Mobile User Interface" />
             </ScreenshotWrapper>
@@ -393,10 +402,13 @@ cd omni-browser`;
               <h3>Contribute to Omni Browser</h3>
               <p>We welcome code audits, battery optimizations, adblock list updates, and localization translations.</p>
               <ButtonGroup>
-                <Button href="https://github.com/rebelroot/omni-browser" target="_blank" rel="noopener noreferrer">
+                <Button href="https://play.google.com/store/apps/details?id=com.rebelroot.omni" target="_blank" rel="noopener noreferrer">
+                  Get it on Google Play <span>&rarr;</span>
+                </Button>
+                <Button href="https://github.com/rebelroot/omni-browser" target="_blank" rel="noopener noreferrer" transparent>
                   GitHub Repository <span>&rarr;</span>
                 </Button>
-                <Button href="/omnibrowser/privacy-policy">
+                <Button href="/omnibrowser/privacy-policy" transparent>
                   Privacy Policy <span>&rarr;</span>
                 </Button>
               </ButtonGroup>
@@ -749,6 +761,18 @@ const ButtonGroup = styled.div`
   display: flex;
   justify-content: center;
   gap: 2rem;
+
+  ${media('<=tablet')} {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+`;
+
+const CTAWrapper = styled.div`
+  display: flex;
+  gap: 2rem;
+  margin-top: 4rem;
 
   ${media('<=tablet')} {
     flex-direction: column;
